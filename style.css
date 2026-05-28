@@ -1,33 +1,126 @@
-/* Base Styles */
 body {
-  color: royalblue;
+  background-color: #fff8f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #5b4b4b;
   text-align: center;
-  background-color: bisque;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-/* Typography */
+header {
+  background-color: #f7d6df;
+  padding: 35px 20px;
+}
 
-/* Links & Accents */
+.accent {
+  color: #d97b93;
+}
 
-/* Images */
+.tagline {
+  color: #7b6a6a;
+}
 
-/* Hero Section */
+nav {
+  background-color: #ffeaf0;
+  padding: 15px;
+}
 
-/* Main Content */
+nav a {
+  margin: 12px;
+  text-decoration: none;
+  color: #7a4f5d;
+  font-weight: bold;
+}
 
-/* About Section */
+nav a:hover {
+  color: #d97b93;
+}
 
-/* Specials Section */
+.hero-img {
+  width: 80%;
+  max-width: 650px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
 
-/* Visit Us Section */
+.about-us,
+.specials,
+.visit-us,
+.testimonials {
+  padding: 40px 20px;
+}
+
+.about-us p,
+.contact-info p {
+  max-width: 800px;
+  margin: 15px auto;
+  line-height: 1.6;
+}
+
+.specials-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.special-offer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.special-offer img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price-now {
+  color: #d97b93;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.price-was {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.testimonials {
+  background-color: #fff0f4;
+}
+
+.review-box {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 iframe {
-  width: 100%;
+  width: 90%;
   height: 350px;
+  border: 0;
+  border-radius: 15px;
 }
 
-/* Footer */
 footer {
-  margin-top: 48px;
+  background-color: #f7d6df;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+  .specials-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px;
+  }
 }
